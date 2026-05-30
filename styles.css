@@ -1,0 +1,212 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 1. Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main Container */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+/* 2. Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.image-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-card img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.image-card h3,
+.image-card h4 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #2980b9;
+}
+
+.image-card h4 {
+    margin-top: auto;
+}
+
+/* 3. Text Section Styles */
+.text-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.text-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.text-section p {
+    margin-bottom: 1.5rem;
+}
+
+/* --- styles imported from temp.html --- */
+@page {
+    size: A4;
+    margin: 20mm 15mm;
+    background-color: #fcfbfa;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Segoe UI', sans-serif;
+    color: #2b2b2a;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfbfa;
+    font-size: 11pt;
+}
+
+.header-banner {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 22pt;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 13pt;
+    color: #bdc3c7;
+    margin: 0;
+}
+
+.artwork-container {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 6px;
+    padding: 22px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    page-break-inside: avoid;
+}
+
+.artwork-title {
+    font-size: 15pt;
+    color: #1a365d;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.section-label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 11.5pt;
+}
+
+.section-label::after {
+    content: ":";
+}
+
+p {
+    margin: 0 0 12px 0;
+    text-align: justify;
+}
+
+.bullet-list {
+    margin: 5px 0 15px 0;
+    padding-right: 20px;
+}
+
+.bullet-list li {
+    margin-bottom: 6px;
+}
+
+.comparison-box {
+    background-color: #f1f5f9;
+    border-right: 4px solid #475569;
+    padding: 20px;
+    border-radius: 0 4px 4px 0;
+    margin-top: 30px;
+    page-break-inside: avoid;
+}
+
+.comparison-title {
+    font-size: 14pt;
+    color: #334155;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.period-item {
+    margin-bottom: 12px;
+}
+
+.period-year {
+    font-weight: bold;
+    color: #0f172a;
+}
+
+/* --- end imported styles --- */
